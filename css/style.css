@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:url(../img/숫자배경.jpg) center no-repeat;
+    background-size: cover;
+    font-weight: bold;
+}
+button{
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #eee;
+    border: 10px solid #000;
+    text-align: center;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    font-size: 4rem;
+    color: plum;
+}
+.txt{
+    width: 100%;
+    height: 20%;
+    font-size: 3rem;
+}
+.txt p:first-child{
+    font-size: 2.5rem;
+}
+.game-area{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    text-align: center;
+}
+.start{
+    width: 100%;
+}
+.start img{
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto 30px;
+}
+.start-btn{
+    width: 280px;
+    height: 80px;
+    background-color: #fff;
+    border: 8px solid plum;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 45px;
+    color: plum;
+    transition: 0.35s;
+}
+.start-btn:hover{
+    background-color: plum;
+    color: #fff;
+}
+.result{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#result-area img{
+    display: block;
+    width: 100%;
+    min-width: 330px;
+    margin-bottom: 30px;
+}
+
+input{
+    display: block;
+    width: 230px;
+    height: 50px;
+    margin: 10px auto;
+    border: 2px solid plum;
+    text-align: center;
+}
+
+#go-btn{
+    width: 130px;
+    height: 45px;
+    background: #fff;
+    border: 4px solid purple;
+    color: purple;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+#reset-btn{
+    width: 90px;
+    height: 45px;
+    background: #fff;
+    border: 4px solid plum;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width:980px) {
+    .container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:580px){
+    .start{
+        height: 100%;
+    }
+    .start img{
+        height: 60%;
+    }
+}
